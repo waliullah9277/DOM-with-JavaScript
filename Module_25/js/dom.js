@@ -11,8 +11,16 @@ for (const h1 of h1Collection) {
 
 const domList = document.getElementsByClassName("dom-list");
 for (const d of domList) {
-  console.log(d.innerText);
+  // console.log(d.innerText);
 }
 
 const fruitsList = document.getElementsByClassName('fruits-list')
-console.log(fruitsList)
+// console.log(fruitsList)
+
+
+const innerFruits = document.getElementById('fruits-container').innerHTML
+// console.log(innerFruits);
+
+// const innerFruitsText = document.getElementById('fruits-container').innerText
+const innerFruitsText = document.getElementById('fruits-container').setAttribute = '<h2>changes </h2>'
+// console.log(innerFruitsText);
