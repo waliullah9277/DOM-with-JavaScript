@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="sticky top-0 z-50"> 
+        <!-- nav bar section start here -->
+        <nav class="bg-[#F9F7F3] w-full shadow py-3">
+            <div class="w-[80%] mx-auto flex md:flex-row items-center justify-between">
+              
+              <!-- Left: Button -->
+              <div class="mb-2 md:mb-0">
+                <a href="index.html" class="bg-[#B4F461] text-black px-4 py-2 rounded hover:bg-[#a6d16d] font-bold inline-block">
+                  Home
+                </a>
+              </div>
+              
+              
+              <!-- Middle: Image + Text -->
+              <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                <img src="images/logo.png" alt="Logo" class="w-8 h-8 rounded-full">
+                <span class="text-lg font-semibold text-black">Donate Bangladesh</span>
+              </div>
+              
+              <!-- Right: Image + Text -->
+              <div class="flex items-center space-x-2">
+                <img src="images/coin.png" alt="Profile" class="w-8 h-8 rounded-full">
+                <span id="account-balance" class="text-black font-bold">5500</span>
+              </div>
+          
+            </div>
+          </nav>     
+          <!-- nav bar section end here -->    
+    </header>
+    <section class="bg-white pt-10 pb-10 min-h-screen">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">Important FAQ</h2>
+        <div class="w-[80%] mx-auto mt-5" id="faq-wrapper">
+
+            <!-- FAQ Item 1 -->
+            <div class="border rounded mb-4 overflow-hidden">
+              <button class="w-full flex justify-between items-center bg-gray-100 text-black px-5 py-4 text-left text-lg font-semibold faq-toggle">
+                <span>What is the Document Object Model (DOM)?</span>
+                <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path class="faq-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+              </button>
+              <div class="faq-content hidden px-5 py-4 bg-white text-black">
+                The DOM (Document Object Model) is a programming interface for HTML and XML documents. It represents the structure of a webpage so it can be accessed and manipulated programmatically.
+              </div>
+            </div>
+          
+            <!-- FAQ Item 2 -->
+            <div class="border rounded mb-4 overflow-hidden">
+              <button class="w-full flex justify-between items-center bg-gray-100 text-black px-5 py-4 text-left text-lg font-semibold faq-toggle">
+                <span>How do you select an element from the DOM?</span>
+                <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path class="faq-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+              </button>
+              <div class="faq-content hidden px-5 py-4 bg-white text-black">
+                Use JavaScript methods like <code>document.getElementById()</code>, <code>querySelector()</code>, or <code>getElementsByClassName()</code> to select elements from the DOM.
+              </div>
+            </div>
+          
+            <!-- FAQ Item 3 -->
+            <div class="border rounded mb-4 overflow-hidden">
+              <button class="w-full flex justify-between items-center bg-gray-100 text-black px-5 py-4 text-left text-lg font-semibold faq-toggle">
+                <span>What is event delegation in the context of the DOM, and why is it useful?</span>
+                <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path class="faq-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+              </button>
+              <div class="faq-content hidden px-5 py-4 bg-white text-black">
+                Event delegation allows you to use a single event listener to handle all events of a particular type on current or future child elements. This is more efficient and flexible.
+              </div>
+            </div>
+          
+            <!-- FAQ Item 4 -->
+            <div class="border rounded mb-4 overflow-hidden">
+              <button class="w-full flex justify-between items-center bg-gray-100 text-black px-5 py-4 text-left text-lg font-semibold faq-toggle">
+                <span>How do you manipulate an element's attributes and styles using the DOM?</span>
+                <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path class="faq-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+              </button>
+              <div class="faq-content hidden px-5 py-4 bg-white text-black">
+                You can use DOM properties like <code>element.setAttribute()</code>, <code>element.classList.add()</code>, or <code>element.style</code> to manipulate attributes and styles dynamically.
+              </div>
+            </div>
+          
+          </div>                    
+    </section>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>
